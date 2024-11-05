@@ -1,0 +1,46 @@
+body{
+    background-image: url(img/Fondo\ medellin\ noche.jpg);
+}
+
+
+.hoteles{
+    padding: 20px;
+    display: flex;
+    column-gap: 2%;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.volver{
+    background-color: #54d636;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 10px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 20px 0;
+    text-decoration: none;
+}
+
+.volver:hover{
+    background-color: #45b92d;
+
+}
+
+.todo{
+text-align: center;
+color: white;
+font-family: sans-serif;
+}
+
+.todo h1{
+    font-size: 80px;
+}
+
+
+p{
+    background-color:black;
+    font-family: sans-serif;
+
+}
