@@ -49,15 +49,6 @@ p {
     background-color: #45b92d;
 }
 
-@media (max-width: 768px) {
-    h1 {
-        font-size: 3rem;
-    }
-
-    p {
-        font-size: 1.2rem;
-    }
-}
 
 #artistas {
     background-image: url('img/Fondo\ de\ los\ artistas.jpg');
@@ -93,17 +84,6 @@ p {
     height: 250px;
 
 
-}
-
-@media (max-width: 768px) {
-    .artistas-container {
-        flex-direction: column;
-    }
-
-    .artista {
-        width: 100%;
-        margin: 10px;
-    }
 }
 
 
@@ -277,15 +257,6 @@ p {
     background-color: #45b92d; ;
 }
 
-@media (max-width: 768px) {
-    .boleta-container {
-        flex-direction: column;
-    }
-
-    .boleta {
-        width: 100%;
-    }
-}
 
 #informacion-importante {
     background-image: url(img/Fondo\ de\ los\ artistas.jpg);
@@ -308,11 +279,6 @@ p {
     margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-    #informacion-importante {
-        padding: 20px;
-    }
-}
 
 footer {
     background-color: black;
@@ -363,9 +329,131 @@ footer {
     font-size: 24px;
 }
 
-@media (max-width: 768px) {
-    .socios-aliados {
-        flex-direction: column;
-        align-items: center;
+
+@media (max-width: 600px) {
+    /* HEADER */
+    header {
+      padding: 50px 0;
     }
-}
+    .banner h1 {
+      font-size: 80px;
+    }
+  
+    /* ARTISTAS */
+    .artistas-container {
+      flex-direction: column;
+    }
+    .artista {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    /* ANTERIORES */
+    .videos {
+      flex-direction: column;
+    }
+    article {
+      width: 100%;
+    }
+  
+    /* DETALLES */
+    .contenedores {
+      flex-direction: column;
+    }
+    .cuadro {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    /* BOLETA */
+    .boleta-container {
+      flex-direction: column;
+    }
+    .boleta {
+      width: 100%;
+    }
+  
+    /* NUEVO FOOTER*/
+    .socios-aliados {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (min-width: 600px) and (max-width: 1024px) {
+    /* HEADER */
+    header {
+      padding: 75px 0;
+    }
+    .banner h1 {
+      font-size: 100px;
+    }
+  
+    /* ARTISTAS */
+    .artistas-container {
+      flex-direction: row;
+    }
+    .artista {
+      width: 45%;
+      margin: 10px;
+    }
+  
+    /* ESTE ES ANTERIORES */
+    .videos {
+      flex-direction: row;
+    }
+    article {
+      width: 48%;
+    }
+  
+    /* DETALLES */
+    .contenedores {
+      flex-direction: row;
+    }
+    .cuadro {
+      width: 30%;
+    }
+  
+    /* BOLETERÍA */
+    .boleta-container {
+      flex-direction: row;
+    }
+    .boleta {
+      width: 45%;
+    }
+  }
+
+  /* A PARTIR DE ACÁ ES PARA AJUSTAR LOS PÁRRAFOS PARA QUE SEPA */
+  @media (max-width: 600px) {
+  
+    html {
+      font-size: 16px; 
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  @media (min-width: 600px) and (max-width: 1024px) {
+
+    html {
+      font-size: 18px;
+    }
+  
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+

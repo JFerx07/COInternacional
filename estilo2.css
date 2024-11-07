@@ -44,3 +44,55 @@ p{
     font-family: sans-serif;
 
 }
+
+@media (max-width: 600px) {
+    
+    html {
+      font-size: 16px;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+  
+    .hoteles {
+      flex-direction: column;
+    }
+  }
+
+     /* AJUSTE PARA LOS TEXTOS DE SEGUNDA PÁGINA */
+  @media (min-width: 600px) and (max-width: 1024px) {
+
+    html {
+      font-size: 18px;
+    }
+    h1 {
+      font-size: 4rem;
+    }
+
+    .hoteles {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  @media (max-width: 600px) {
+    html {
+        font-size: 16px; 
+    }
+
+    .hoteles {
+        flex-direction: column; 
+        justify-content: center;
+    }
+
+    .hotel {
+        width: 100%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    html {
+        font-size: 18px;
+    }
+}
